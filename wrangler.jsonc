@@ -1,0 +1,34 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "neon-slither",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "ARENA",
+        "class_name": "Arena"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["Arena"]
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "USERS",
+      "id": "3ed8e47411694d6085c5f82f5d936a2b",
+      "preview_id": "3ed8e47411694d6085c5f82f5d936a2b"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
