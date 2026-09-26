@@ -1,0 +1,10 @@
+name = "neon-slither"
+compatibility_date = "2026-09-25"
+
+# Static assets only (index.html). Online multiplayer needs a separate Node host.
+[assets]
+directory = "."
+
+# Optional: enable observability
+[observability]
+enabled = true
