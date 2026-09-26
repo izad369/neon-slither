@@ -3,7 +3,7 @@ main = "src/worker.js"
 compatibility_date = "2026-09-25"
 
 [assets]
-directory = "."
+directory = "./public"
 binding = "ASSETS"
 
 [[durable_objects.bindings]]
