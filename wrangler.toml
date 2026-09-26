@@ -14,13 +14,10 @@ class_name = "Arena"
 tag = "v1"
 new_classes = ["Arena"]
 
-# Run these once, then paste the IDs:
-#   npx wrangler kv namespace create USERS
-#   npx wrangler kv namespace create USERS --preview
 [[kv_namespaces]]
 binding = "USERS"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
-preview_id = "REPLACE_WITH_YOUR_KV_PREVIEW_ID"
+id = "3ed8e47411694d6085c5f82f5d936a2b"
+preview_id = "3ed8e47411694d6085c5f82f5d936a2b"
 
 [observability]
 enabled = true
