@@ -1,0 +1,14 @@
+node_modules
+**/node_modules/**
+.wrangler
+dist
+*.log
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+.pnpm-store
+server.js
+users.json
+*.md
+.git
