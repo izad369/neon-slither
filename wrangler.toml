@@ -1,10 +1,26 @@
 name = "neon-slither"
+main = "src/worker.js"
 compatibility_date = "2026-09-25"
 
-# Static assets only (index.html). Online multiplayer needs a separate Node host.
 [assets]
-directory = "."
+directory = "./public"
+binding = "ASSETS"
 
-# Optional: enable observability
+[[durable_objects.bindings]]
+name = "ARENA"
+class_name = "Arena"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Arena"]
+
+# Run these once, then paste the IDs:
+#   npx wrangler kv namespace create USERS
+#   npx wrangler kv namespace create USERS --preview
+[[kv_namespaces]]
+binding = "USERS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_YOUR_KV_PREVIEW_ID"
+
 [observability]
 enabled = true
