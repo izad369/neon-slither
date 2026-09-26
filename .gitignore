@@ -1,0 +1,14 @@
+node_modules/
+.wrangler/
+dist/
+.env
+.env.*
+*.log
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+users.json
+.DS_Store
+.idea/
+.vscode/
