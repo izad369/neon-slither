@@ -1,11 +1,13 @@
 {
   "name": "neon-slither",
-  "version": "1.0.0",
-  "main": "server.js",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev"
   },
-  "dependencies": {
-    "ws": "^8.16.0"
+  "devDependencies": {
+    "wrangler": "^4.0.0"
   }
 }
